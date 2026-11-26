@@ -1,0 +1,10 @@
+{
+  "name": "miyora-discord-host",
+  "entrypoint": "main.py",
+  "python": "3.12",
+  "requirements": "requirements.txt",
+  "environment": {
+    "BOT_API_HOST": "0.0.0.0",
+    "BOT_API_PORT": "8000"
+  }
+}

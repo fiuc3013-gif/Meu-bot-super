@@ -1,0 +1,13 @@
+{
+  "name": "miyora-monorepo",
+  "private": true,
+  "workspaces": ["public-site", "owner-panel"],
+  "scripts": {
+    "dev:public": "npm run dev --workspace public-site",
+    "dev:owner": "npm run dev --workspace owner-panel",
+    "build": "npm run build --workspace public-site && npm run build --workspace owner-panel",
+    "lint": "npm run lint --workspace public-site && npm run lint --workspace owner-panel",
+    "test": "python3 -m unittest discover -s tests -p 'test_*.py'"
+  },
+  "engines": { "node": ">=20" }
+}
